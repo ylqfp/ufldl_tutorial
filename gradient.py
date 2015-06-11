@@ -12,7 +12,6 @@ import stacked_autoencoder
 # that computeNumericalGradients will use only the first returned value of this function.
 def simple_quadratic_function(x):
     value = x[0] ** 2 + 3 * x[0] * x[1]
-    #此处的公式存疑
     grad = np.zeros(shape=2, dtype=np.float32)
     grad[0] = 2 * x[0] + 3 * x[1]
     grad[1] = 3 * x[0]
